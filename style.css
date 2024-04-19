@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin:auto;
+}
+/* Horizontial lines containing the newspaper heading */
+.hr1, .hr2 {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    padding: 0;
+}
+h1 {
+    font-size:100px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.hr2 {
+    margin-top: 30px;
+}
+/* Website link */
+.news-link {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 11.5%;
+    padding: 5px;
+    margin-left: 30px;
+}
+/* Newspaper puhlisher name (Daily Newspaper) */
+.newspaper {
+    font-family: 'Georgia', sans-serif;
+    font-weight: 900;
+}
+/* Highlights news */
+.title-2 {
+    color: lightcoral;
+}
+/* Motto */
+.subtext {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    width: 85%;
+    margin: auto;
+}
+
+/* Article name */
+.article {
+    font-family: 'Garamond', sans-serif;
+    font-size:60px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #041c1f;
+    font-weight: bold;
+}
+.date {
+    font-size: 15px;
+    float: left;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.edition {
+    font-size: 15px;
+    float: right;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Contains the content for first section of newspaper and first topic */
+.container-1 {
+    display: grid;
+    grid-template-columns: 0.3fr 1px 0.7fr 1fr; /* Creates a grid with four columns */
+    align-items: start; /* Aligns items to the top */
+    gap: 20px; /* Space between the columns */
+}
+/* other articles */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Aligns .p-1 children vertically */
+    gap: 20px;  /* Space between the paragraphs in the text container */
+}
+.vertical-line {
+    width: 1px; /* Width of the vertical line */
+    background-color: black;
+    height: 100%; /* Adjust based on the actual content height or desired design */
+}
+/* Paragraph 1 */
+.text-container-2 {
+    display: flex;
+    flex-direction: column; /* Aligns .p-2 children vertically */
+    gap: 20px;  /* Space between the paragraphs in the text container */
+    text-align: justify; /* Aligns the text to the image */
+}
+/* Contains image-1 and its caption */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    align-items: center; /* Center-align the caption below the image */
+}
+.ai {
+    width: 100%; /* Makes sure the image takes up the entire width of its grid area */
+    height: 500px;
+}
+.caption {
+    margin-top: 5px; /* Space between the image and the caption */
+    font-size: 0.8em;
+    color: #666;
+    text-align: center; /* Center the text of the caption */
+}
+/* Small title of snippet content */
+h4 {
+    text-transform: uppercase;
+    color: lightseagreen;
+    font-size: 15px;
+}
+
+.hr3 {
+    margin-top: 10px; /* Adds padding to top */
+    display: block;
+    height: 1px;
+    width: auto;
+    border: 0;
+    border-top: 1px solid black;
+    padding: 10px; /* Adds padding to the bottom */
+}
+
+/* Second container for second topic */
+.container-2 {
+    display: grid;
+    grid-template-columns: 2.5fr 1px 3.5fr; /* Creates a grid with four columns */
+    align-items: start;
+    gap: 20px;
+}
+/* Contains one topic and image each */
+.image-and-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    align-items: center; /* Center-align the caption below the image */
+}
+.virus {
+    width: 100%; /* Makes sure the image takes up the entire width of its grid area */
+    height: 300px;
+}
+.caption-2 {
+    margin-top: 5px; /* Space between the image and the caption */
+    margin-bottom: 5px; /* Space between the caption and the bottom text */
+    font-size: 0.8em;
+    color: #666;
+    text-align: center; /* Center the text of the caption */
+}
+.vertical-line-2 {
+    width: 1px; /* Width of the vertical line */
+    background-color: black;
+    height: 100%; /* Adjust based on the actual content height or desired design */
+
+}
+/* Second topic and image of the container */
+.image-and-text-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+.fusion {
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 70%;
+    height: auto; /* Keeps ratio of width to height */
+}
+.caption-3 {
+    margin-top: 5px; /* Space between the image and the caption */
+    margin-bottom: 5px; /* Space between the caption and the bottom text */
+    font-size: 0.8em;
+    color: #666;
+    text-align: center; /* Center the text of the caption */
+}
+p {
+    text-align: justify;
+}
+
+.hr4 {
+    margin-top: 10px; /* Adds padding to top */
+    display: block;
+    height: 1px;
+    width: auto;
+    border: 0;
+    border-top: 1px solid black;
+    padding: 10px; /* Adds padding to the bottom */
+}
+
+/* Contain last section of newspaper */
+.image-container {
+    float: left; /* Aligns the image container to the left, allowing text to wrap around on the right */
+    margin-right: 20px; /* Adds space between the image container and the text */
+    margin-bottom: 10px; /* Adds space below the image container */
+}
+.firewall {
+    width: 450px;
+    height: 300px;
+}
+.caption-4 {
+    margin-top: 5px; /* Adds a small space between the image and the caption */
+    font-size: 0.8em; /* Adjusts the font size of the caption */
+}
+.p-4 {
+    overflow: hidden; /* Helps wrap text around the floated container */
+    margin-bottom: 20px;
+}
+.hr6 {
+    margin-top: 20px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    padding: 0;
+}
